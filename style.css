@@ -271,12 +271,25 @@ iframe{
     }
     nav{
         position: static;
+        text-align: center;
     }
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    nav li{
+        display: block;
+        margin: .8em auto;
+    }
+    .productos li{
+        display: block;
+        width: 100%;
+        margin: 2em auto;
+    }
+    .productos, .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
         width: auto ;
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
         margin: 2em auto;
+    }
+    table{
+        position: static;
     }
 }
