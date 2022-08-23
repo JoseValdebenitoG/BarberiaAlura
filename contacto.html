@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="style.css">   
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">     
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -23,7 +23,7 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main class="form-body">
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
                 <input type="text" id="nombreapellido" class="input-formulario" required>
@@ -35,7 +35,7 @@
                 <input type="tel" id="telefono" class="input-formulario" required placeholder="(XX) XXXX XXXX">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" cols="70" rows="10"></textarea>
+                <textarea id="mensaje" cols="70" rows="10" class="input-formulario"></textarea>
 
                 <fieldset>
                     <legend>¿Cómo le gustaria que lo contactemos?</legend>
@@ -49,7 +49,7 @@
 
                 <fieldset>
                     <legend>¿En cúal horario prefiere ser atendido?</legend>
-                    <select>
+                    <select class="selector-horario">
                         <option>Mañana</option>
                         <option>Tarde</option>
                         <option>Noche</option>

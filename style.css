@@ -34,14 +34,14 @@ nav li{
 nav a{
     text-transform: uppercase;
     color: #000000;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 22px;
     text-decoration: none;
 }
 
 nav a:hover{
     color: #C78C19;
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 .productos{
@@ -54,6 +54,7 @@ nav a:hover{
     display: inline-block;
     text-align: center;
     width: 30%;
+    height: 445px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -101,6 +102,11 @@ footer{
     margin: 20px;
 }
 
+.form-body{
+    width: 940px;
+    margin: 0 auto;
+}
+
 form{
     margin: 40px 0;
 }
@@ -122,6 +128,10 @@ form label, form legend{
     margin: 20px 0;
 }
 
+.selector-horario{
+    font-size: 20px;
+}
+
 .enviar{
     width: 40%;
     padding: 15px;
@@ -141,7 +151,7 @@ form label, form legend{
 }
 
 table{
-    margin: 40px 40px;
+    margin: 40px 60px;
 }
 
 thead{
@@ -152,7 +162,7 @@ thead{
 
 td, th{
     border: 1px solid #000000;
-    padding: 8px 15px;
+    padding: 8px 20px;
 }
 
 /* CSS para home */
@@ -232,7 +242,6 @@ td, th{
 .items{
     line-height: 1.5;
     padding: 0 10px;
-    ;
 }
 
 .items::before{
@@ -264,7 +273,8 @@ iframe{
     border-radius: 10px;
 }
 
-@media screen and (max-width: 480px) {
+/* celulares */
+@media screen and (max-width: 540px) {
 
     h1{
         text-align: center;
@@ -282,14 +292,67 @@ iframe{
         width: 100%;
         margin: 2em auto;
     }
-    .productos, .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    .productos, .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .form-body{
         width: auto ;
+        padding: 0 10px;
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
         margin: 2em auto;
     }
+    .form-body, .enviar{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .input-formulario{
+        width: 75%;
+    }
     table{
         position: static;
+        margin: 40px auto;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+    body{
+        font-size: 1.2em;
+    }
+    h1{
+        text-align: left;
+    }
+    nav{
+        position: absolute;
+        top: 110px;
+        right: 0; 
+    }
+    nav li{
+        display: inline;
+        margin: 0 15px 0 15px;
+    }
+    .productos li{
+        display: block;
+        width: 75%;
+        margin: 2em auto;
+    }
+    .productos, .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .form-body{
+        width: auto ;
+        padding: 0 20px;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        margin: 2em auto;
+    }
+    .form-body, .enviar{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    .input-formulario{
+        width: 75%;
+    }
+    table{
+        position: static;
+        margin: 40px auto;
     }
 }
